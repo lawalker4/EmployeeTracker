@@ -47,14 +47,15 @@ THEN I am prompted to select an employee to update and their new role and this i
 ---
 
 ### Installation
-[REPO](https://github.com/lawalker4/expressshopping)
+[REPO]()
 
 [Express.js](https://expressjs.com/en/starter/installing.html)
 
-[MySQL](https://www.mysql.com/)
+[MySQL2](https://www.npmjs.com/package/mysql2)
 
-[Sequelize](https://sequelize.org/)
+[Inquirer](https://www.npmjs.com/package/inquirer)
 
+[Console.Table](https://www.npmjs.com/package/console.table)
 ---
 
 ### Usage
