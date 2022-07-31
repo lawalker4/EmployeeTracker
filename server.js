@@ -121,12 +121,12 @@ addRole = () => {
         },
         {
             type:'input',
-            name: 'yearly_income',
-            message: 'What is your yearly income?',
+            name: 'salary',
+            message: 'What is your yearly salary?',
         }
     ])
         .then(answer => {
-            const parameters = [answer.role, answer.yearly_income];
+            const parameters = [answer.role, answer.salary];
             const role_var = `SELECT name, id FROM department`;
 
             connection.query (role_var, (err, data) => {
@@ -144,7 +144,7 @@ addRole = () => {
         .then(department_varChoice => {
             const department_var = department_varChoice.department_var;
             parameters.push(department_var);
-            const mysql = `INSET INTO rol (title, yearly_income, department_id) VALUES (?,?,?)`;
+            const mysql = `INSET INTO rol (title, salary, department_id) VALUES (?,?,?)`;
 
             connection.query(mysql, parameters, (err, result) => {
                 if (err) return console.log(err);
@@ -159,7 +159,7 @@ addRole = () => {
 //show employees
 showEmployees = () => {
     console.log('All employees are showing.');
-    const mysql = `SELECT employee.id, employee.first_name, employee.lastname, role.title, department.name AS department, role.yearly_income, CONCAT(manager.first_name, manager.last_name) AS manager FROM employee LEFT JOIN role ON employee.role_id = role.id LEFT JOIN department ON role.department.id LEFT JOIN employee manager ON employee.manager_id = manager.id`;
+    const mysql = `SELECT employee.id, employee.first_name, employee.lastname, role.title, department.name AS department, role.salary, CONCAT(manager.first_name, manager.last_name) AS manager FROM employee LEFT JOIN role ON employee.role_id = role.id LEFT JOIN department ON role.department.id LEFT JOIN employee manager ON employee.manager_id = manager.id`;
 
     connect.query(mysql, (err, rows) => {
         if (err) return console.log(err);

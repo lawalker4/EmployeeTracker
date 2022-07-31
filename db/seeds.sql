@@ -36,4 +36,4 @@ VALUES
     ('Davos', 'Seaworth', 4,null),
     ('Margaery', 'Tyrell', 2, null),
     ('Tormund', 'Giantsbane', 3, null),
-    ('Jorah', 'Mormont', 5, null),
+    ('Jorah', 'Mormont', 5, null)
