@@ -41,13 +41,8 @@ THEN I am prompted to select an employee to update and their new role and this i
 ```
 ---
 
-## Mock Up
-![MockUp](./images/Mock-Up.PNG)
-
----
-
 ### Installation
-[REPO]()
+[REPO](https://github.com/lawalker4/EmployeeTracker/tree/develop)
 
 [Express.js](https://expressjs.com/en/starter/installing.html)
 
@@ -69,9 +64,7 @@ To run application take the following steps:
 
 ### Screenshot
 :movie_camera:	
-[Demo Video]()
-
-![Screenshot]()
+[Demo Video](https://watch.screencastify.com/v/ZVgxAUS18DHBBk2P4PEW)
 
 ---
 
